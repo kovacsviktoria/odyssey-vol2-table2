@@ -7,7 +7,8 @@
   outline: none;
   text-decoration: none;
   font-family: inherit;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ol, ul, li {
@@ -59,6 +60,7 @@ body {
   left: 0;
   width: 100%;
   height: 80px;
+  z-index: 10;
 }
 #header button {
   width: 150px;
@@ -71,11 +73,88 @@ body {
 #header #menuBtn {
   top: 0;
   left: 0;
+  position: relative;
   border-right: 1px solid #ffce00;
+  /*#menu.activeMenu::after {
+    content: "X";
+      border:1px solid #f30;
+  } */
+}
+#header #menuBtn #menuContainer {
+  width: 150px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  border-right: 1px solid #ffce00;
+  border-bottom: 1px solid #ffce00;
+}
+#header #menuBtn #menuContainer.active {
+  display: block;
+}
+#header #menuBtn #menuContainer a {
+  display: block;
+  padding: 15px 20px;
+}
+#header #menuBtn #menuContainer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+}
+#header #menuBtn #menu.activeMenu::after {
+  content: " X";
+}
+#header #menuBtn #menu.inactiveMenu::after {
+  content: " =";
+}
+#header div#menuIcon {
+  height: 80px;
+  width: 20px;
+  position: relative;
+}
+#header div#menuIcon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 10px;
+  background: #d3531a;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+#header div#menuIcon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 2px 2px 0;
+}
+#header div#menuIcon span:nth-child(odd) {
+  left: 0px;
+  border-radius: 2px 0 0 2px;
+}
+#header div#menuIcon span:nth-child(1), #header div#menuIcon span:nth-child(2) {
+  top: 20px;
+}
+#header div#menuIcon span:nth-child(3), #header div#menuIcon span:nth-child(4) {
+  top: 30px;
+}
+#header div#menuIcon .open span:nth-child(1), #header div#menuIcon .open span:nth-child(4) {
+  width: 70%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+#header div#menuIcon .open span:nth-child(2), #header div#menuIcon .open span:nth-child(3) {
+  width: 70%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 #header #tripsBtn {
   top: 0;
   right: 0;
+}
+#header #tripsBtn:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
 }
 #header::before, #header::after {
   content: "";
@@ -95,7 +174,8 @@ body {
   position: absolute;
   top: 80px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   fill: #ffce00;
 }
 
@@ -103,6 +183,8 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  background: #0c1657;
+  background: radial-gradient(circle, rgba(12, 22, 87, 0.1) 0%, rgba(12, 22, 87, 0.6) 100%);
 }
 #welcome video {
   z-index: -1;
@@ -115,7 +197,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 24pt;
   font-weight: 700;
   line-height: 28.8pt;
@@ -124,7 +207,8 @@ body {
   position: absolute;
   left: 50%;
   top: 55%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 14pt;
   font-weight: 300;
   line-height: 16.8pt;
@@ -133,7 +217,8 @@ body {
   position: absolute;
   left: 50%;
   bottom: 10%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 14pt;
   font-weight: 700;
   line-height: 16.8pt;
@@ -143,7 +228,8 @@ body {
   position: absolute;
   left: 50%;
   bottom: 15%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 #welcome a svg .sun, #welcome a svg .sunbeam {
   fill: none;

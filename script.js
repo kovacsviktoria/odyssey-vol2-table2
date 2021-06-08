@@ -1,4 +1,5 @@
 function loadEvent() {
+    //added menu list items
     let menuContainer = `<div id="menuContainer"></div>`;
     let menuBtn = document.getElementById("menuBtn");
 
@@ -17,6 +18,28 @@ function loadEvent() {
         `;
         document.getElementById("menuContainer").insertAdjacentHTML("beforeend", link);        
     }
+
+    //Click event menu
+    function toggleMenuBtn (click){
+        document.getElementById("menuContainer").classList.toggle("active");
+        let body = document.querySelector("body");
+        //document.querySelector("body").style.overflow = "hidden";
+        
+        if(body.style.overflow === ""){
+            body.style.overflow = "hidden";
+            document.getElementById("menuIcon").classList.add("open");
+        }
+        else {
+            body.style.overflow = "";
+            document.getElementById("menuIcon").classList.remove("open");
+        }
+
+
+
+    };
+
+    menuBtn.addEventListener("click", toggleMenuBtn);
+   
 };
 
 window.addEventListener("load", loadEvent);

@@ -47,6 +47,7 @@ body {
   left: 0;
   width: 100%;
   height: 80px;
+  z-index: 10;
 
   button {
     width: 150px;
@@ -60,13 +61,103 @@ body {
   #menuBtn {
     top: 0;
     left: 0;
+    position: relative;
     border-right: 1px solid #ffce00;
+
+    #menuContainer{
+      width: 150px;
+      display: none;
+      position: absolute;
+      top: 100%;
+      border-right: 1px solid #ffce00;
+      border-bottom: 1px solid #ffce00;
+    }
+
+    #menuContainer.active {
+      display: block;
+    }
+
+    #menuContainer a{
+      display: block;
+      padding: 15px 20px;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 2px;
+      }
+    }
+    
+    /*#menu.activeMenu::after {
+      content: "X";
+        border:1px solid #f30;
+    } */
+
+    #menu.activeMenu::after {
+      content: " X";
+    }
+
+    #menu.inactiveMenu::after {
+      content: " =";
+    }
+  }
+
+  div#menuIcon {
+    height: 80px;
+    width: 20px;
+    position: relative;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 10px;
+      background: #d3531a;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+  
+    span:nth-child(even) {
+      left: 50%;
+      border-radius: 0 2px 2px 0;
+    }
+    
+   span:nth-child(odd) {
+      left:0px;
+      border-radius: 2px 0 0 2px;
+    }
+  
+    span:nth-child(1), span:nth-child(2) {
+      top: 20px;
+    }
+    
+    span:nth-child(3), span:nth-child(4) {
+      top: 30px;
+    }
+  
+    .open span:nth-child(1), .open span:nth-child(4) {
+      width: 70%;
+      transform: rotate(45deg);
+    }
+  
+    .open span:nth-child(2), .open span:nth-child(3) {
+      width: 70%;
+      transform: rotate(-45deg);
+    }
   }
 
   #tripsBtn {
     top: 0;
     right: 0;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 2px;
+    }
   }
+
   &::before, &::after {
     content: "";
     display: block;
@@ -89,9 +180,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     fill: #ffce00;
-
-
-
   }
 }
 
@@ -99,6 +187,8 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  background: rgb(12,22,87);
+  background: radial-gradient(circle, rgba(12,22,87,0.1) 0%, rgba(12,22,87,0.6) 100%);
 
   video {
     z-index: -1;
