@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">
+  <defs>
+    <style>
+      .a {
+        fill: #141283;
+      }
+
+      .a, .aa, .ab, .ac, .ad, .b, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+        stroke: #fc0;
+      }
+
+      .a, .aa, .ab, .ac, .ad, .b, .c, .d, .e, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .a, .b, .c, .d, .e, .f {
+        stroke-width: 2px;
+      }
+
+      .aa, .ab, .ac, .ad, .b, .d, .e, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+        fill: none;
+      }
+
+      .b, .d {
+        stroke-dasharray: 0 3.96;
+      }
+
+      .c {
+        fill: #114498;
+      }
+
+      .c, .d, .e {
+        stroke: #0096ab;
+      }
+
+      .e {
+        stroke-dasharray: 0 3.96;
+      }
+
+      .g {
+        font-size: 14px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+      }
+
+      .g, .h, .k {
+        fill: #fc0;
+      }
+
+      .h {
+        font-size: 12px;
+        font-family: Poppins-Light, Poppins;
+        font-weight: 300;
+      }
+
+      .j {
+        stroke-dasharray: 3.96 5.94;
+      }
+
+      .l {
+        stroke-dasharray: 4.18 6.26;
+      }
+
+      .m {
+        stroke-dasharray: 3.99 5.98;
+      }
+
+      .n {
+        stroke-dasharray: 4.1 6.15;
+      }
+
+      .o {
+        stroke-dasharray: 4.01 6.01;
+      }
+
+      .p {
+        stroke-dasharray: 4 5.99;
+      }
+
+      .q {
+        stroke-dasharray: 3.99 5.98;
+      }
+
+      .r {
+        stroke-dasharray: 4 5.99;
+      }
+
+      .s {
+        stroke-dasharray: 4.3 6.45;
+      }
+
+      .t {
+        stroke-dasharray: 4.06 6.08;
+      }
+
+      .u {
+        stroke-dasharray: 4.01 6.01;
+      }
+
+      .v {
+        stroke-dasharray: 4.13 6.2;
+      }
+
+      .w {
+        stroke-dasharray: 3.91 5.87;
+      }
+
+      .x {
+        stroke-dasharray: 3.93 5.9;
+      }
+
+      .y {
+        stroke-dasharray: 4 6;
+      }
+
+      .z {
+        stroke-dasharray: 4.04 6.07;
+      }
+
+      .aa {
+        stroke-dasharray: 3.99 5.98;
+      }
+
+      .ab {
+        stroke-dasharray: 3.9 5.85;
+      }
+
+      .ac {
+        stroke-dasharray: 4.03 6.04;
+      }
+
+      .ad {
+        stroke-dasharray: 3.99 5.99;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="a" cx="806" cy="431" r="10"/>
+    <circle class="b" cx="806.5" cy="430.5" r="14.5"/>
+    <g>
+      <circle class="c" cx="936" cy="553" r="10"/>
+      <circle class="d" cx="936.5" cy="552.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1035" cy="335" r="10"/>
+      <circle class="d" cx="1035.5" cy="334.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1198" cy="261" r="10"/>
+      <circle class="d" cx="1198.5" cy="260.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1409" cy="329" r="10"/>
+      <circle class="d" cx="1409.5" cy="328.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1437" cy="432" r="10"/>
+      <circle class="d" cx="1437.5" cy="431.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1181" cy="607" r="10"/>
+      <circle class="d" cx="1181.5" cy="606.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1194" cy="535" r="10"/>
+      <circle class="d" cx="1194.5" cy="534.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="1416" cy="687" r="10"/>
+      <circle class="d" cx="1415.5" cy="686.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="912" cy="781" r="10"/>
+      <circle class="d" cx="912.5" cy="781.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="787" cy="310" r="10"/>
+      <circle class="d" cx="786.5" cy="310.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="669" cy="343" r="10"/>
+      <circle class="d" cx="669.5" cy="343.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="358" cy="337" r="10"/>
+      <circle class="d" cx="357.5" cy="336.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="51" cy="312" r="10"/>
+      <circle class="d" cx="50.5" cy="312.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="424" cy="458" r="10"/>
+      <circle class="e" cx="423.5" cy="458.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="504" cy="484" r="10"/>
+      <circle class="d" cx="503.5" cy="484.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="266" cy="508" r="10"/>
+      <circle class="d" cx="266.5" cy="508.5" r="14.5"/>
+    </g>
+    <g>
+      <circle class="c" cx="169" cy="723" r="10"/>
+      <circle class="d" cx="169.5" cy="722.5" r="14.5"/>
+    </g>
+    <polyline class="f" points="820.8 416.2 848 389 977 389"/>
+    <text class="g" transform="translate(876.7 381.6)">CABO LEBO</text>
+    <g>
+      <circle class="c" cx="902" cy="647" r="10"/>
+      <circle class="d" cx="901.5" cy="647.5" r="14.5"/>
+    </g>
+    <text class="h" transform="translate(868.5 406.8)">Point Break / HARD</text>
+    <g>
+      <g>
+        <path class="i" d="M1419.9,654.1c0-.7-.1-1.3-.1-2"/>
+        <path class="j" d="M1419.5,646.2a919.6,919.6,0,0,1,8-174.7"/>
+        <path class="i" d="M1428,468.5l.3-1.9"/>
+        <polygon class="k" points="1423.5 651.1 1419.9 652.9 1416.1 651.5 1420.3 660.1 1423.5 651.1"/>
+      </g>
+      <g>
+        <path class="i" d="M1448.3,403.6l.3-2"/>
+        <path class="l" d="M1449.3,395.4a94.9,94.9,0,0,0-13.4-57"/>
+        <path class="i" d="M1434.2,335.7l-1.1-1.6"/>
+        <polygon class="k" points="1452.4 401.5 1448.5 402.3 1445.2 400.1 1447.1 409.4 1452.4 401.5"/>
+      </g>
+      <g>
+        <path class="i" d="M1380.7,318.7l-1.7-1"/>
+        <path class="m" d="M1374.1,314.2c-10.8-8.8-18.3-22.4-27.4-33.4A98.9,98.9,0,0,0,1225.9,256"/>
+        <path class="i" d="M1223.3,257.4l-1.8,1"/>
+        <polygon class="k" points="1379.7 314.1 1379.6 318.1 1376.6 320.8 1386.2 321.1 1379.7 314.1"/>
+      </g>
+      <g>
+        <path class="i" d="M1166.1,262.7l-1.8-.9"/>
+        <path class="n" d="M1158.6,259.5c-17-5.9-37.1-3.4-51.6,7.4-9.3,6.9-16.1,16.5-22.8,26l-18,25.3"/>
+        <path class="i" d="M1064.4,320.7l-1.1,1.6"/>
+        <polygon class="k" points="1165.5 258.2 1165 262.2 1161.7 264.6 1171.2 265.8 1165.5 258.2"/>
+      </g>
+      <g>
+        <path class="i" d="M1031.9,366.3a12.3,12.3,0,0,0,.2,2"/>
+        <path class="o" d="M1032.7,374.3c4.3,34.7,15.5,67.7,40.4,92.5a169,169,0,0,0,101.6,48"/>
+        <path class="i" d="M1177.7,515.1h2"/>
+        <polygon class="k" points="1028.5 369.5 1032.1 367.6 1035.9 368.8 1031.4 360.4 1028.5 369.5"/>
+      </g>
+      <g>
+        <path class="i" d="M1216.5,554.8l.7,1.8"/>
+        <path class="p" d="M1218.7,562.4a36.1,36.1,0,0,1-.3,13.9,35.6,35.6,0,0,1-11.9,19.3"/>
+        <path class="i" d="M1204.2,597.4l-1.7,1.1"/>
+        <polygon class="k" points="1214.4 559 1217 555.9 1221 555.7 1213.7 549.5 1214.4 559"/>
+      </g>
+      <g>
+        <path class="i" d="M1174.2,639.1c-.4.6-.7,1.2-1.1,1.7"/>
+        <path class="q" d="M1169.9,645.9c-24.3,37.5-52.2,73-87.6,100.1-37.8,28.8-85.1,47.4-132.4,43.8"/>
+        <path class="i" d="M946.9,789.6l-2-.2"/>
+        <polygon class="k" points="1169.5 639.5 1173.5 640.1 1175.7 643.5 1177.3 634.1 1169.5 639.5"/>
+      </g>
+      <g>
+        <path class="i" d="M886.5,763.1l-1.7-1.1"/>
+        <path class="r" d="M880,758.4a71.7,71.7,0,0,1-10-10.6c-9.9-12.9-16.3-28.9-15.5-45.1.8-14.6,8-29,19.9-37.2"/>
+        <path class="i" d="M877,663.9l1.7-.9"/>
+        <polygon class="k" points="885.8 758.4 885.4 762.4 882.3 765 891.8 765.8 885.8 758.4"/>
+      </g>
+      <g>
+        <path class="i" d="M911.9,619a13.6,13.6,0,0,0,.2-2"/>
+        <path class="s" d="M913.3,610.6a90.2,90.2,0,0,1,10.5-26.9"/>
+        <path class="i" d="M925.5,581c.4-.6.7-1.2,1.1-1.7"/>
+        <polygon class="k" points="915.9 616.5 912.1 617.8 908.5 615.8 911.4 624.9 915.9 616.5"/>
+      </g>
+      <g>
+        <path class="i" d="M906.2,548.3l-1.9.3"/>
+        <path class="t" d="M898.2,549.3a81.4,81.4,0,0,1-88.9-84.7"/>
+        <path class="i" d="M809.5,461.6c0-.7.1-1.3.1-2"/>
+        <polygon class="k" points="902.7 545.2 905 548.5 904.3 552.4 912 546.9 902.7 545.2"/>
+      </g>
+      <g>
+        <path class="i" d="M803.2,402.7a14.2,14.2,0,0,0-.4-2"/>
+        <path class="u" d="M801.8,394.8c-2.8-15.4-5.5-30.9-8.3-46.3"/>
+        <path class="i" d="M793,345.5c-.1-.6-.3-1.3-.4-2"/>
+        <polygon class="k" points="806.4 399.3 803 401.5 799.1 400.6 804.3 408.6 806.4 399.3"/>
+      </g>
+      <g>
+        <path class="i" d="M763.1,297.6l-2-.4"/>
+        <path class="v" d="M755,296.4c-23-2-46.8,6.2-63.4,22.2"/>
+        <path class="i" d="M689.4,320.8l-1.4,1.5"/>
+        <polygon class="k" points="761.2 293.4 761.9 297.4 759.5 300.6 768.9 299 761.2 293.4"/>
+      </g>
+      <g>
+        <path class="i" d="M663.2,374.2c-.1.7-.1,1.4-.2,2"/>
+        <path class="w" d="M662,382c-5.4,28.3-22.8,55-44.3,74.1a127.3,127.3,0,0,1-87,32.1"/>
+        <path class="i" d="M527.7,488.1h-2"/>
+        <polygon class="k" points="659.2 376.7 663.1 375.5 666.6 377.4 663.7 368.3 659.2 376.7"/>
+      </g>
+      <g>
+        <path class="i" d="M477,502.5l-1.9.6"/>
+        <path class="x" d="M469.5,504.9a68.5,68.5,0,0,1-10.9,2.4c-8.2,1.1-17,.2-24.1-4.1s-10.2-9.3-11.3-15.8"/>
+        <path class="i" d="M422.9,484.5a13.3,13.3,0,0,1,0-2"/>
+        <polygon class="k" points="473.1 499.8 475.8 502.8 475.5 506.8 482.6 500.4 473.1 499.8"/>
+      </g>
+      <g>
+        <path class="i" d="M398.7,439.4l-1.8-.9"/>
+        <path class="y" d="M391.8,435.4A71.6,71.6,0,0,1,368.5,411a72.6,72.6,0,0,1-9.3-41.3"/>
+        <path class="i" d="M359.5,366.8l.3-2"/>
+        <polygon class="k" points="397.7 434.8 397.6 438.8 394.6 441.5 404.1 441.9 397.7 434.8"/>
+      </g>
+      <g>
+        <path class="i" d="M331.5,319.4,330,318"/>
+        <path class="z" d="M325.4,314A206.5,206.5,0,0,0,83,295.5"/>
+        <path class="i" d="M80.4,297.1l-1.7,1.1"/>
+        <polygon class="k" points="331.9 314.8 330.6 318.6 326.9 320.2 335.8 323.5 331.9 314.8"/>
+      </g>
+      <g>
+        <path class="i" d="M70.3,334.3l1.8.9"/>
+        <path class="aa" d="M77.4,337.9a463.4,463.4,0,0,1,167,149.2"/>
+        <path class="i" d="M246,489.6a16.3,16.3,0,0,1,1.1,1.7"/>
+        <polygon class="k" points="71.1 338.9 71.3 334.9 74.4 332.3 64.9 331.7 71.1 338.9"/>
+      </g>
+      <g>
+        <path class="i" d="M264,541.2l-.3,2"/>
+        <path class="ab" d="M262.7,549a338.4,338.4,0,0,1-71.2,155"/>
+        <path class="i" d="M189.7,706.2l-1.3,1.6"/>
+        <polygon class="k" points="259.9 543.4 263.8 542.4 267.2 544.5 264.9 535.3 259.9 543.4"/>
+      </g>
+      <g>
+        <path class="i" d="M134.4,731l-1.8.7"/>
+        <path class="ac" d="M126.9,733.7a214.3,214.3,0,0,1-86.3,10.9"/>
+        <path class="i" d="M37.6,744.4l-2-.2"/>
+        <polygon class="k" points="130.5 728.4 133.3 731.3 133.1 735.3 140 728.7 130.5 728.4"/>
+      </g>
+      <g>
+        <path class="i" d="M1568.9,713.9l-1.9.6"/>
+        <path class="ad" d="M1561.2,716a170.9,170.9,0,0,1-113.9-11.5"/>
+        <path class="i" d="M1444.6,703.2l-1.8-.9"/>
+        <polygon class="k" points="1565.1 711.2 1567.8 714.3 1567.3 718.3 1574.6 712.1 1565.1 711.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

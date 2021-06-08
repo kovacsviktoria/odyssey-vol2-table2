@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .a, .b {
+        fill: none;
+        stroke: #fc0;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .b {
+        stroke-dasharray: 0 4;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="a" cx="15" cy="15" r="10"/>
+    <circle class="b" cx="15" cy="15" r="14"/>
+  </g>
+</svg>

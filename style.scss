@@ -1,0 +1,55 @@
+/*reset start*/
+* {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    background: transparent; 
+    outline: none; 
+    text-decoration: none; 
+    font-family: inherit; 
+    box-sizing: border-box;
+  }
+
+  ol, ul, li {
+    list-style: none; 
+    display: block;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  button,
+  a {cursor: pointer; color: inherit;}
+  a img {border: none;}
+  
+  textarea {resize: none;}
+  
+  button,
+  input,
+  textarea,
+  select {appearance: none !important; border-radius: 0;}
+/*reset end*/
+
+body {
+  background-color: ;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  &::before,
+  &::after {
+    content: "";
+
+  }
+
+  button {
+    width: 150px; 
+  }
+}
