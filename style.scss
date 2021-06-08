@@ -33,7 +33,12 @@
 /*reset end*/
 
 body {
-  background-color: ;
+  background-color: #00263f;
+  color: #ffce00;
+
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 #header {
@@ -43,13 +48,52 @@ body {
   width: 100%;
   height: 80px;
 
-  &::before,
-  &::after {
-    content: "";
+  button {
+    width: 150px;
+    height: inherit;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+  }
+
+  #menuBtn {
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ffce00;
 
   }
 
-  button {
-    width: 150px; 
+  #tripsBtn {
+    top: 0;
+    right: 0;
+  }
+  &::before, &::after {
+    content: "";
+    display: block;
+    width: calc(100% - 50% - 50px);
+    height: 1px;
+    position: absolute;
+    top: 80px;
+    background-color:#ffce00;
+  }
+
+  &::after {
+    right: 0;
+    width: calc(100% - 50% - 45px);
+  }
+
+  .logo {
+    width: 100px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #ffce00;
+
+
+
   }
 }
+
+
