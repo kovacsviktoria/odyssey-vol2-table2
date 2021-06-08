@@ -61,7 +61,6 @@ body {
     top: 0;
     left: 0;
     border-right: 1px solid #ffce00;
-
   }
 
   #tripsBtn {
@@ -96,4 +95,77 @@ body {
   }
 }
 
+#welcome {
+  height: 100vh;
+  width: 100%;
+  position: relative;
 
+  video {
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    margin: -40px 0 -40px 0;
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 24pt;
+    font-weight: 700;
+    line-height: 28.8pt;
+  }
+
+  h2 {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 16.8pt;
+  }
+
+  a {
+    span {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%, -50%);
+
+      font-size: 14pt;
+      font-weight: 700;
+      line-height: 16.8pt;
+    }
+  }
+
+  a svg {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+
+    .sun, .sunbeam {
+      fill: none;
+      stroke: #fc0;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    .sunbeam {
+      stroke-dasharray: 0 4;
+    }
+  }
+
+  .svgHolder svg {
+    position: absolute;
+    bottom: 0;
+    fill: url(#wave);
+  }
+}
