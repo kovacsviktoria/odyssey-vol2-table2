@@ -69,7 +69,9 @@ body {
     #menu {
       position: relative;
       top: 50%;
+      left: 10%;
       transform: translateY(-50%);
+      
       
     }
 
@@ -112,16 +114,16 @@ body {
   }
 
   button div#menuIcon {
-    height: inherit;
+    height: 27px;
     width: 20px;
     position: relative;
- 
-    transform: translateY(15%);
+    left: -5%;
+    transform: translateY(50%);
 
     span {
       display: block;
       position: absolute;
-      height: 5px;
+      height: 4px;
       width: 10px;
       background: #ffce00;
       opacity: 1;
