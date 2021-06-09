@@ -119,14 +119,6 @@ body {
   text-underline-offset: 2px;
 }
 
-#header #menuBtn #menu.activeMenu::after {
-  content: " X";
-}
-
-#header #menuBtn #menu.inactiveMenu::after {
-  content: " =";
-}
-
 #header button div#menuIcon {
   height: inherit;
   width: 20px;

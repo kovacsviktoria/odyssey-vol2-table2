@@ -102,13 +102,13 @@ body {
         border:1px solid #f30;
     } */
 
-    #menu.activeMenu::after {
-      content: " X";
-    }
+    // #menu.activeMenu::after {
+    //   content: " X";
+    // }
 
-    #menu.inactiveMenu::after {
-      content: " =";
-    }
+    // #menu.inactiveMenu::after {
+    //   content: " =";
+    // }
   }
 
   button div#menuIcon {
