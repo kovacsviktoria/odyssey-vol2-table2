@@ -48,10 +48,11 @@ function loadEvent() {
     <div class="swiper-wrapper"></div>
 
     </div>
-
-    <div class="swiper-button-prev-unique">${arrowSvg}</div>
-    <div class="swiper-pagination-unique">${sun}</div>
-    <div class="swiper-button-next-unique">${arrowSvg}</div>
+    <div id="pagination-container">
+        <div class="swiper-button-prev-unique">${arrowSvg}</div>
+        <div class="swiper-pagination-unique">${sun}</div>
+        <div class="swiper-button-next-unique">${arrowSvg}</div>
+    </div>
     `)
 
     const images = ["cars", "surfing", "teapot"];
@@ -88,6 +89,21 @@ function loadEvent() {
 
     });
 
+    // Footer / Social reapeating element created with for loop
+
+    const social = document.getElementById("social");
+    social.insertAdjacentHTML("beforeend", 
+    `
+        <a href="#">
+            <img src="" />
+        </a>
+        <a href="#">
+            <img src="" />
+        </a>
+        <a href="#">
+            <img src="" />
+        </a>
+    `);
 };
 
 window.addEventListener("load", loadEvent);
