@@ -49,7 +49,7 @@ select {
 body {
   background-color: #00263f;
   color: #ffce00;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -62,6 +62,7 @@ body {
   height: 80px;
   z-index: 10;
 }
+
 #header button {
   width: 150px;
   height: inherit;
@@ -69,17 +70,31 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  font-size: large;
 }
+
 #header #menuBtn {
-  top: 0;
-  left: 0;
-  position: relative;
   border-right: 1px solid #ffce00;
   /*#menu.activeMenu::after {
-    content: "X";
-      border:1px solid #f30;
-  } */
+      content: "X";
+        border:1px solid #f30;
+    } */
 }
+
+#header #menuBtn #menu {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 #header #menuBtn #menuContainer {
   width: 150px;
   display: none;
@@ -88,74 +103,94 @@ body {
   border-right: 1px solid #ffce00;
   border-bottom: 1px solid #ffce00;
 }
+
 #header #menuBtn #menuContainer.active {
   display: block;
 }
+
 #header #menuBtn #menuContainer a {
   display: block;
   padding: 15px 20px;
 }
+
 #header #menuBtn #menuContainer a:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
+
 #header #menuBtn #menu.activeMenu::after {
   content: " X";
 }
+
 #header #menuBtn #menu.inactiveMenu::after {
   content: " =";
 }
-#header div#menuIcon {
-  height: 80px;
+
+#header button div#menuIcon {
+  height: inherit;
   width: 20px;
   position: relative;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
-#header div#menuIcon span {
+
+#header button div#menuIcon span {
   display: block;
   position: absolute;
   height: 5px;
   width: 10px;
-  background: #d3531a;
+  background: #ffce00;
   opacity: 1;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
-#header div#menuIcon span:nth-child(even) {
+
+#header button div#menuIcon span:nth-child(even) {
   left: 50%;
   border-radius: 0 2px 2px 0;
 }
-#header div#menuIcon span:nth-child(odd) {
+
+#header button div#menuIcon span:nth-child(odd) {
   left: 0px;
   border-radius: 2px 0 0 2px;
 }
-#header div#menuIcon span:nth-child(1), #header div#menuIcon span:nth-child(2) {
+
+#header button div#menuIcon span:nth-child(1), #header button div#menuIcon span:nth-child(2) {
   top: 20px;
 }
-#header div#menuIcon span:nth-child(3), #header div#menuIcon span:nth-child(4) {
+
+#header button div#menuIcon span:nth-child(3), #header button div#menuIcon span:nth-child(4) {
   top: 30px;
 }
-#header div#menuIcon .open span:nth-child(1), #header div#menuIcon .open span:nth-child(4) {
+
+#header button div#menuIcon.open span:nth-child(1), #header button div#menuIcon.open span:nth-child(4) {
   width: 70%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-#header div#menuIcon .open span:nth-child(2), #header div#menuIcon .open span:nth-child(3) {
+
+#header button div#menuIcon.open span:nth-child(2), #header button div#menuIcon.open span:nth-child(3) {
   width: 70%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
 #header #tripsBtn {
-  top: 0;
+  top: 50%;
   right: 0;
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
 }
+
 #header #tripsBtn:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
+
 #header::before, #header::after {
   content: "";
   display: block;
@@ -165,10 +200,12 @@ body {
   top: 80px;
   background-color: #ffce00;
 }
+
 #header::after {
   right: 0;
   width: calc(100% - 50% - 45px);
 }
+
 #header .logo {
   width: 100px;
   position: absolute;
@@ -186,6 +223,7 @@ body {
   background: #0c1657;
   background: radial-gradient(circle, rgba(12, 22, 87, 0.1) 0%, rgba(12, 22, 87, 0.6) 100%);
 }
+
 #welcome video {
   z-index: -1;
   position: fixed;
@@ -193,6 +231,7 @@ body {
   min-height: 100%;
   margin: -40px 0 -40px 0;
 }
+
 #welcome h1 {
   position: absolute;
   left: 50%;
@@ -203,6 +242,7 @@ body {
   font-weight: 700;
   line-height: 28.8pt;
 }
+
 #welcome h2 {
   position: absolute;
   left: 50%;
@@ -213,6 +253,7 @@ body {
   font-weight: 300;
   line-height: 16.8pt;
 }
+
 #welcome a span {
   position: absolute;
   left: 50%;
@@ -223,6 +264,7 @@ body {
   font-weight: 700;
   line-height: 16.8pt;
 }
+
 #welcome a svg {
   width: 30px;
   position: absolute;
@@ -231,6 +273,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
 #welcome a svg .sun, #welcome a svg .sunbeam {
   fill: none;
   stroke: #fc0;
@@ -238,11 +281,14 @@ body {
   stroke-miterlimit: 10;
   stroke-width: 2px;
 }
+
 #welcome a svg .sunbeam {
   stroke-dasharray: 0 4;
 }
+
 #welcome .svgHolder svg {
   position: absolute;
   bottom: 0;
   fill: url(#wave);
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

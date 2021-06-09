@@ -56,13 +56,22 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 600;
-  }
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: large;
+    }
 
   #menuBtn {
-    top: 0;
-    left: 0;
-    position: relative;
+
     border-right: 1px solid #ffce00;
+
+    #menu {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      
+    }
 
     #menuContainer{
       width: 150px;
@@ -102,17 +111,19 @@ body {
     }
   }
 
-  div#menuIcon {
-    height: 80px;
+  button div#menuIcon {
+    height: inherit;
     width: 20px;
     position: relative;
+ 
+    transform: translateY(15%);
 
     span {
       display: block;
       position: absolute;
       height: 5px;
       width: 10px;
-      background: #d3531a;
+      background: #ffce00;
       opacity: 1;
       transform: rotate(0deg);
       transition: .25s ease-in-out;
@@ -136,20 +147,21 @@ body {
       top: 30px;
     }
   
-    .open span:nth-child(1), .open span:nth-child(4) {
+    &.open span:nth-child(1), &.open span:nth-child(4) {
       width: 70%;
       transform: rotate(45deg);
     }
   
-    .open span:nth-child(2), .open span:nth-child(3) {
+    &.open span:nth-child(2), &.open span:nth-child(3) {
       width: 70%;
       transform: rotate(-45deg);
     }
   }
 
   #tripsBtn {
-    top: 0;
+    top: 50%;
     right: 0;
+    transform: translateY(-15%);
 
     &:hover {
       text-decoration: underline;
