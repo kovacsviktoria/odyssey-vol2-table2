@@ -274,3 +274,17 @@ body {
     fill: url(#wave);
   }
 }
+
+.swiper-container {
+  height: 600px;
+
+  margin: 20px auto;
+  
+  .swiper-slide {
+    width: 100vh;
+
+      img {
+        width: 100%;  
+      }
+  }
+}

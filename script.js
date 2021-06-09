@@ -41,41 +41,44 @@ function loadEvent() {
     const galleryContainer = document.getElementById("galleryContainer");
 
     galleryContainer.insertAdjacentHTML("beforeend", `
-    <div class="swiperContainer">
+    <div class="swiper-container">
 
-        <div id="swiperWrapper"></div>
+    <div class="swiper-wrapper"></div>
 
-        <div class="swiperPagination"></div>
+    <div class="swiper-pagination"></div>
 
-        <div class="swiperButtonPrev"></div>
-        <div class="swiperButtonNext"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
     </div>
     `)
 
     const images = ["cars", "surfing", "teapot"];
-    const targetSwiper = document.getElementById("swiperWrapper");
+    const targetSwiper = document.querySelector(".swiper-wrapper");
 
     for (const image of images) {
-        const slide =`<div class="swiperSlide"><img src="png-files/${image}.png" /></div>`;
+        const slide =`<div class="swiper-slide"><img src="png-files/${image}.png" /></div>`;
 
         targetSwiper.insertAdjacentHTML("beforeend", slide)
     }
 
-    const swiper = new Swiper('.swiperContainer', {
+    const swiper = new Swiper(".swiper-container", {
         // Optional parameters
         loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+
       
         // If we need pagination
         pagination: {
-          el: '.swiperPagination',
+          el: ".swiper-pagination",
           clickable: true
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiperButtonNext',
-          prevEl: '.swiperButtonPrev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
 
     });
