@@ -1,7 +1,7 @@
 function loadEvent() {  
     //added menu list items
-    let menuContainer = `<div id="menuContainer"></div>`;
-    let menuBtn = document.getElementById("menuBtn");
+    let menuContainer = `<div id="menu-container"></div>`;
+    let menuBtn = document.getElementById("menu-btn");
 
     menuBtn.insertAdjacentHTML("beforeend", menuContainer);
 
@@ -16,41 +16,42 @@ function loadEvent() {
         let link = `
             <a href="${listItem.link}">${listItem.name}</a>
         `;
-        document.getElementById("menuContainer").insertAdjacentHTML("beforeend", link);        
+        document.getElementById("menu-container").insertAdjacentHTML("beforeend", link);        
     }
 
     //click event menu
     function toggleMenuBtn (click){
-        document.getElementById("menuContainer").classList.toggle("active");
+        document.getElementById("menu-container").classList.toggle("active");
         let body = document.querySelector("body");
         //document.querySelector("body").style.overflow = "hidden";
         
         if(body.style.overflow === ""){
             body.style.overflow = "hidden";
-            document.getElementById("menuIcon").classList.add("open");
+            document.getElementById("menu-icon").classList.add("open");
         }
         else {
             body.style.overflow = "";
-            document.getElementById("menuIcon").classList.remove("open");
+            document.getElementById("menu-icon").classList.remove("open");
         }
     };
 
     menuBtn.addEventListener("click", toggleMenuBtn);
    
     //gallery slider
-    const galleryContainer = document.getElementById("galleryContainer");
+    const galleryContainer = document.getElementById("gallery-container");
+    const arrowSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 25"><polygon class="a" points="0 25 0 0 20 12.5 0 25"/></svg>`;
+    const sun = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><circle class="sun" cx="15" cy="15" r="10"/><circle class="sunbeam" cx="15" cy="15" r="14"/></svg>`;
 
     galleryContainer.insertAdjacentHTML("beforeend", `
     <div class="swiper-container">
 
     <div class="swiper-wrapper"></div>
 
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
     </div>
+
+    <div class="swiper-button-prev-unique">${arrowSvg}</div>
+    <div class="swiper-pagination-unique">${sun}</div>
+    <div class="swiper-button-next-unique">${arrowSvg}</div>
     `)
 
     const images = ["cars", "surfing", "teapot"];
@@ -71,14 +72,19 @@ function loadEvent() {
       
         // If we need pagination
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true
+            el: ".swiper-pagination-unique",
+            clickable: true,
+            
+            renderBullet: function (index, className) {
+                
+                return `<span class="dot swiper-pagination-bullet"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><circle class="sun" cx="15" cy="15" r="10"/><circle class="sunbeam" cx="15" cy="15" r="14"/></svg></span>`;
+          },
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next-unique",
+          prevEl: ".swiper-button-prev-unique",
         },
 
     });

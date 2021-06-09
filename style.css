@@ -78,21 +78,21 @@ body {
       align-content: space-around;
   font-size: large;
 }
-#header #menuBtn {
+#header #menu-btn {
   border-right: 1px solid #ffce00;
   /*#menu.activeMenu::after {
     content: "X";
       border:1px solid #f30;
   } */
 }
-#header #menuBtn #menu {
+#header #menu-btn #menu {
   position: relative;
   top: 50%;
   left: 10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-#header #menuBtn #menuContainer {
+#header #menu-btn #menu-container {
   width: 150px;
   display: none;
   position: absolute;
@@ -100,10 +100,10 @@ body {
   border-right: 1px solid #ffce00;
   border-bottom: 1px solid #ffce00;
 }
-#header #menuBtn #menuContainer.active {
+#header #menu-btn #menu-container.active {
   display: block;
 }
-#header #menuBtn #menuContainer a {
+#header #menu-btn #menu-container a {
   display: block;
   padding: 15px 20px;
   -webkit-text-decoration: underline 3px rgba(255, 206, 0, 0);
@@ -114,11 +114,11 @@ body {
   transition: text-decoration-color 400ms, -webkit-text-decoration-color 400ms;
   text-underline-offset: 0.2em;
 }
-#header #menuBtn #menuContainer a:hover {
+#header #menu-btn #menu-container a:hover {
   -webkit-text-decoration: underline 3px #ffce00;
           text-decoration: underline 3px #ffce00;
 }
-#header button div#menuIcon {
+#header button div#menu-icon {
   height: 27px;
   width: 20px;
   position: relative;
@@ -126,7 +126,7 @@ body {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
-#header button div#menuIcon span {
+#header button div#menu-icon span {
   display: block;
   position: absolute;
   height: 4px;
@@ -138,31 +138,31 @@ body {
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-#header button div#menuIcon span:nth-child(even) {
+#header button div#menu-icon span:nth-child(even) {
   left: 50%;
   border-radius: 0 2px 2px 0;
 }
-#header button div#menuIcon span:nth-child(odd) {
+#header button div#menu-icon span:nth-child(odd) {
   left: 0px;
   border-radius: 2px 0 0 2px;
 }
-#header button div#menuIcon span:nth-child(1), #header button div#menuIcon span:nth-child(2) {
+#header button div#menu-icon span:nth-child(1), #header button div#menu-icon span:nth-child(2) {
   top: 20px;
 }
-#header button div#menuIcon span:nth-child(3), #header button div#menuIcon span:nth-child(4) {
+#header button div#menu-icon span:nth-child(3), #header button div#menu-icon span:nth-child(4) {
   top: 30px;
 }
-#header button div#menuIcon.open span:nth-child(1), #header button div#menuIcon.open span:nth-child(4) {
+#header button div#menu-icon.open span:nth-child(1), #header button div#menu-icon.open span:nth-child(4) {
   width: 70%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-#header button div#menuIcon.open span:nth-child(2), #header button div#menuIcon.open span:nth-child(3) {
+#header button div#menu-icon.open span:nth-child(2), #header button div#menu-icon.open span:nth-child(3) {
   width: 70%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-#header #tripsBtn {
+#header #trips-btn {
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-15%);
@@ -175,7 +175,7 @@ body {
   transition: text-decoration-color 400ms, -webkit-text-decoration-color 400ms;
   text-underline-offset: 0.2em;
 }
-#header #tripsBtn:hover {
+#header #trips-btn:hover {
   -webkit-text-decoration: underline 3px #ffce00;
           text-decoration: underline 3px #ffce00;
 }
@@ -264,7 +264,7 @@ body {
 #welcome a svg .sunbeam {
   stroke-dasharray: 0 4;
 }
-#welcome .svgHolder svg {
+#welcome .svg-holder svg {
   position: absolute;
   bottom: 0;
   fill: url(#wave);
@@ -280,6 +280,20 @@ body {
 .swiper-container .swiper-slide img {
   width: 100%;
 }
-.swiper-container .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+
+.swiper-pagination-bullet-active svg .sun, .swiper-pagination-bullet-active svg .sunbeam {
+  fill: none;
+  stroke: #fc0;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+.swiper-pagination-bullet-active svg .sunbeam {
+  stroke-dasharray: 0 4;
+}
+
+.swiper-button-next-unique, .swiper-button-prev-unique {
+  width: 25px;
+  height: 20px;
+  fill: #0096ab;
 }/*# sourceMappingURL=style.css.map */
