@@ -351,3 +351,129 @@ body {
   rotate: 180deg;
   transform: translate(0, -50%);
 }
+
+// #social {
+//   display: flex;
+// }
+
+// #social img {
+//   width: 30px;
+//   height: 30px;
+//   fill: blue;
+// }
+
+footer {
+    // background-color: #00263d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+
+  #newsletter {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: #1E95A9;
+  }
+
+  h4 {
+      font-size: 24pt;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-anchor: middle;
+      padding-top: 20px;
+      padding-bottom: 40px;
+  }
+
+  input {
+      background-color: transparent;
+      border-bottom: 1px solid #ffce00;
+      padding-bottom: 10px;
+      width: 250px;
+  }
+
+  input:focus {
+      background-color: transparent;
+      border-bottom: 1px solid #ffce00;
+      padding-bottom: 10px;
+      width: 250px;
+      font-size:18px;
+      text-transform: none;
+      outline: none;
+  }
+
+  input::placeholder {
+    color: #BDCCD4;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+}
+
+  input:focus::placeholder {
+    opacity: 0;
+}
+
+ h5 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #1E95A9;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#social {
+    display: flex;
+}
+
+// #container-sm #social-icons svg {
+//     height: 100px;
+//     width: 100px;
+//     fill: #ffce00;
+//     border: 1px solid #ffce00;
+//     padding: 35px;
+// }
+
+// #container-sm #logo-bottom {
+//     padding-top: 80px;
+//     height: 320px;
+//     width: 100px;
+// }
+
+// #container-sm #logo-bottom svg {
+//     fill: #ffce00;
+// }
+
+// .wave-container2 {
+//     position: relative;
+//     background-color: #00263d;
+// }
+
+// #wave-bottom {
+//     position: absolute;
+//     bottom: 0;
+//     z-index: 1;
+// }
+
+// #wave-path-bottom {
+//     fill: url(#wave-grad-light)
+// }
+
+// #footer-text {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;   
+// }
+
+// #footer-text p {
+//     z-index: 2;
+//     padding: 0px 40px 20px 40px;
+//     color: #00263d;
+//     font-weight: 500;
+//     letter-spacing: 0.2em;
+// }
+
+}

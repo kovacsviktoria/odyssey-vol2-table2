@@ -92,18 +92,22 @@ function loadEvent() {
     // Footer / Social reapeating element created with for loop
 
     const social = document.getElementById("social");
-    social.insertAdjacentHTML("beforeend", 
-    `
-        <a href="#">
-            <img src="" />
-        </a>
-        <a href="#">
-            <img src="" />
-        </a>
-        <a href="#">
-            <img src="" />
-        </a>
-    `);
+
+    const socialIcons = [
+        {"icon":"mail", "link": "mailto:example@gmail.com"}, 
+        {"icon": "facebook", "link": "https://www.facebook.com"} ,
+        {"icon": "insta", "link": "https://www.instagram.com"}
+    ];
+
+    const svgFolder = "./svg-files/";
+    for(const socialIcon of socialIcons) {
+        social.insertAdjacentHTML("beforeend", 
+        `
+            <a href="${socialIcon.link}">
+                <img src="${svgFolder}${socialIcon.icon}.svg" />
+            </a>
+        `);
+    }
 };
 
 window.addEventListener("load", loadEvent);

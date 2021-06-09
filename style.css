@@ -373,4 +373,116 @@ body {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+footer #newsletter {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #1E95A9;
+}
+
+footer h4 {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-anchor: middle;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+footer input {
+  background-color: transparent;
+  border-bottom: 1px solid #ffce00;
+  padding-bottom: 10px;
+  width: 250px;
+}
+
+footer input:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #ffce00;
+  padding-bottom: 10px;
+  width: 250px;
+  font-size: 18px;
+  text-transform: none;
+  outline: none;
+}
+
+footer input::-webkit-input-placeholder {
+  color: #BDCCD4;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+}
+
+footer input:-ms-input-placeholder {
+  color: #BDCCD4;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+}
+
+footer input::-ms-input-placeholder {
+  color: #BDCCD4;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+}
+
+footer input::placeholder {
+  color: #BDCCD4;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+}
+
+footer input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+footer input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+footer input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+footer input:focus::placeholder {
+  opacity: 0;
+}
+
+footer h5 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #1E95A9;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+footer #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
