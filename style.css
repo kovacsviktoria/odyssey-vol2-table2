@@ -485,4 +485,60 @@ footer #social {
   display: -ms-flexbox;
   display: flex;
 }
+
+footer #social img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ffce00;
+  padding: 35px;
+}
+
+footer #logo-bottom {
+  padding-top: 80px;
+  height: 320px;
+  width: 100px;
+}
+
+footer #logo-bottom svg {
+  fill: #ffce00;
+}
+
+footer .bottom-links {
+  width: 100%;
+}
+
+footer .bottom-links .svg-holder {
+  background-color: #00263d;
+}
+
+footer .bottom-links .svg-holder svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+footer .bottom-links .svg-holder #wave-path-bottom {
+  fill: url(#wave-grad-light);
+}
+
+footer #footer-text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer-text a {
+  z-index: 2;
+  padding: 0px 40px 20px 40px;
+  color: #00263d;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
 /*# sourceMappingURL=style.css.map */

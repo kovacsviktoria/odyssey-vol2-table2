@@ -416,7 +416,7 @@ footer {
     opacity: 0;
 }
 
- h5 {
+  h5 {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.2em;
@@ -425,55 +425,57 @@ footer {
     padding-bottom: 10px;
 }
 
-#social {
-    display: flex;
+  #social {
+      display: flex;
+
+    img {
+      height: 100px;
+      width: 100px;
+      border: 1px solid #ffce00;
+      padding: 35px;
+    }
 }
 
-// #container-sm #social-icons svg {
-//     height: 100px;
-//     width: 100px;
-//     fill: #ffce00;
-//     border: 1px solid #ffce00;
-//     padding: 35px;
-// }
+  #logo-bottom {
+    padding-top: 80px;
+    height: 320px;
+    width: 100px;
+}
 
-// #container-sm #logo-bottom {
-//     padding-top: 80px;
-//     height: 320px;
-//     width: 100px;
-// }
+  #logo-bottom svg {
+      fill: #ffce00;
+  }
 
-// #container-sm #logo-bottom svg {
-//     fill: #ffce00;
-// }
+  .bottom-links {
+    width: 100%;
+  }
 
-// .wave-container2 {
-//     position: relative;
-//     background-color: #00263d;
-// }
+  .bottom-links .svg-holder{
+      background-color: #00263d;
 
-// #wave-bottom {
-//     position: absolute;
-//     bottom: 0;
-//     z-index: 1;
-// }
+    svg {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    #wave-path-bottom {
+        fill: url(#wave-grad-light)
+    }
+  }
+  
+  #footer-text {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 
-// #wave-path-bottom {
-//     fill: url(#wave-grad-light)
-// }
-
-// #footer-text {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;   
-// }
-
-// #footer-text p {
-//     z-index: 2;
-//     padding: 0px 40px 20px 40px;
-//     color: #00263d;
-//     font-weight: 500;
-//     letter-spacing: 0.2em;
-// }
+ a {
+    z-index: 2;
+    padding: 0px 40px 20px 40px;
+    color: #00263d;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+}
 
 }
