@@ -47,6 +47,7 @@ select {
 
 /*reset end*/
 body {
+  height: 100%;
   background-color: #00263f;
   color: #ffce00;
   font-family: 'Poppins', sans-serif;
@@ -385,8 +386,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
   position: relative;
 }
 
@@ -505,6 +504,7 @@ footer #logo-bottom svg {
 
 footer .bottom-links {
   width: 100%;
+  bottom: 0;
 }
 
 footer .bottom-links .svg-holder {
@@ -512,7 +512,6 @@ footer .bottom-links .svg-holder {
 }
 
 footer .bottom-links .svg-holder svg {
-  position: absolute;
   bottom: 0;
   z-index: 1;
 }
@@ -522,7 +521,6 @@ footer .bottom-links .svg-holder #wave-path-bottom {
 }
 
 footer #footer-text {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,6 +533,7 @@ footer #footer-text {
 }
 
 footer #footer-text a {
+  bottom: 0;
   z-index: 2;
   padding: 0px 40px 20px 40px;
   color: #00263d;
