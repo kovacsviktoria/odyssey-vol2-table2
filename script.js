@@ -76,8 +76,7 @@ function loadEvent() {
             clickable: true,
             
             renderBullet: function (index, className) {
-                
-                return `<span class="dot swiper-pagination-bullet"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><circle class="sun" cx="15" cy="15" r="10"/><circle class="sunbeam" cx="15" cy="15" r="14"/></svg></span>`;
+                return `<svg class="swiper-pagination-bullet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><circle class="sun" cx="15" cy="15" r="10"/><circle class="sunbeam" cx="15" cy="15" r="14"/></svg>`;
           },
         },
       
