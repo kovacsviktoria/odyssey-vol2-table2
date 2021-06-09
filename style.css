@@ -112,12 +112,18 @@ body {
 #header #menuBtn #menuContainer a {
   display: block;
   padding: 15px 20px;
+  -webkit-text-decoration: underline 3px rgba(255, 206, 0, 0);
+          text-decoration: underline 3px rgba(255, 206, 0, 0);
+  -webkit-transition: -webkit-text-decoration-color 400ms;
+  transition: -webkit-text-decoration-color 400ms;
+  transition: text-decoration-color 400ms;
+  transition: text-decoration-color 400ms, -webkit-text-decoration-color 400ms;
+  text-underline-offset: 0.2em;
 }
 
 #header #menuBtn #menuContainer a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 2px;
+  -webkit-text-decoration: underline 3px #ffce00;
+          text-decoration: underline 3px #ffce00;
 }
 
 #header button div#menuIcon {
@@ -177,12 +183,18 @@ body {
   right: 0;
   -webkit-transform: translateY(-15%);
           transform: translateY(-15%);
+  -webkit-text-decoration: underline 3px rgba(255, 206, 0, 0);
+          text-decoration: underline 3px rgba(255, 206, 0, 0);
+  -webkit-transition: -webkit-text-decoration-color 400ms;
+  transition: -webkit-text-decoration-color 400ms;
+  transition: text-decoration-color 400ms;
+  transition: text-decoration-color 400ms, -webkit-text-decoration-color 400ms;
+  text-underline-offset: 0.2em;
 }
 
 #header #tripsBtn:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 2px;
+  -webkit-text-decoration: underline 3px #ffce00;
+          text-decoration: underline 3px #ffce00;
 }
 
 #header::before, #header::after {

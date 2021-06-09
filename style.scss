@@ -91,11 +91,13 @@ body {
     #menuContainer a{
       display: block;
       padding: 15px 20px;
+      text-decoration: underline 3px rgba(255, 206, 0, 0);
+      transition: text-decoration-color 400ms;
+      text-underline-offset: 0.2em;
 
       &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-        text-underline-offset: 2px;
+        text-decoration: underline 3px rgba(255, 206, 0, 1);
+        
       }
     }
     
@@ -164,11 +166,13 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-15%);
+    text-decoration: underline 3px rgba(255, 206, 0, 0);
+    transition: text-decoration-color 400ms;
+    text-underline-offset: 0.2em;
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-thickness: 3px;
-      text-underline-offset: 2px;
+      text-decoration: underline 3px rgba(255, 206, 0, 1);
+
     }
   }
 
