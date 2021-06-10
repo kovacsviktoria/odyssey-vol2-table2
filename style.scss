@@ -33,7 +33,7 @@
 /*reset end*/
 
 body {
-  height: 100%;
+  
   background-color: #00263d;
   color: #ffce00;
 
@@ -222,26 +222,23 @@ body {
     background: rgb(136, 137, 145);
     background: radial-gradient(circle, rgba(12,22,87,0.1) 0%, rgba(12,22,87,0.6) 100%);
 
-  h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+  h1 {
     font-size: 24pt;
     font-weight: 700;
     line-height: 28.8pt;
+    text-align: center;
   }
 
   h2 {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-
     font-size: 14pt;
     font-weight: 300;
     line-height: 16.8pt;
+    text-align: center;
   }
 
   a {
@@ -277,12 +274,15 @@ body {
     }
   }
 
-  .svg-holder svg {
-    position: absolute;
-    bottom: 0;
-    fill: url(#wave);
-    
+  .svg-holder {
+    width: 100%;
+    svg {
+      position: absolute;
+      bottom: 0;
+      fill: url(#wave);
+      }
   }
+
 }
 
 video {
@@ -303,11 +303,12 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 100vh;
+  height: fit-content;
+  width: 100%;
   top: 0;
   left: 0;
 
-  h2 {
+  #our-route {
     font-size: 36pt;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -319,7 +320,7 @@ video {
 
   #wave-middle {
     position: absolute;
-    bottom: 230px;
+    bottom: 0;
       path{
         fill: url(#wave-grad-dark)
     }
@@ -338,6 +339,23 @@ video {
     span.no-wrap {
       white-space: pre-line;
     }
+  }
+
+
+}
+
+#route {
+  #location-holder {
+    height: fit-content;
+    width: 100%;
+    
+
+    background-color: #00263d;
+    text-align: center;
+    font-size: 16px;
+    // position: absolute;
+    // bottom: 0;
+    padding: 40px;
   }
 }
 
