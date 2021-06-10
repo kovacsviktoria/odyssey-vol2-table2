@@ -386,7 +386,7 @@ video {
   height: -moz-fit-content;
   height: fit-content;
   max-width: 50%;
-  padding: 0 5% 70px 5%;
+  padding: 3px 5% 70px 5%;
   background-color: #00263d;
   text-align: center;
 }
@@ -399,9 +399,27 @@ video {
   text-align: center;
   font-size: 12pt;
   font-weight: 300;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  line-height: 2em;
   color: #1e95a9;
   text-transform: uppercase;
+  padding: 3px 3px;
+  outline: solid 2px rgba(255, 206, 0, 0);
+  background-color: rgba(255, 206, 0, 0);
+  -webkit-transition-property: outline;
+  transition-property: outline;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#route #location-holder button:hover {
+  outline: solid 2px rgba(255, 206, 0, 0.8);
+  background-color: rgba(255, 206, 0, 0.5);
+  color: #00263d;
 }
 
 #pagination-container {

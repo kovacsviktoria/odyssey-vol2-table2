@@ -347,9 +347,10 @@ video {
   #location-holder {
     height: fit-content;
     max-width: 50%;
-    padding: 0 5% 70px 5%;
+    padding: 3px 5% 70px 5%;
     background-color: #00263d;
     text-align: center;
+    
 
 
     span {
@@ -360,9 +361,27 @@ video {
       text-align: center;
       font-size: 12pt;
       font-weight: 300;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.1em;
+      line-height: 2em;
       color: #1e95a9;
       text-transform: uppercase;
+      padding: 3px 3px;
+      // color: rgba(0, 38, 61,0 );
+      outline: solid 2px rgba(255, 206, 0, 0);
+      background-color: rgba(255, 206, 0, 0);
+      transition-property: outline;
+      transition-property: background-color;
+      transition-property: color;
+      transition-duration: 1s;
+
+
+    }
+
+    button:hover {
+      outline: solid 2px rgba(255, 206, 0, 0.8);
+      background-color: rgba(255, 206, 0, 0.5);
+      color: rgba(0, 38, 61, 1);
+    
     }
   }
 }
