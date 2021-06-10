@@ -629,17 +629,25 @@ footer .bottom-links #footer-text {
 
 footer .bottom-links #footer-text #footer-name {
   width: 50%;
+  z-index: 1000;
 }
 
 footer .bottom-links #footer-text #footer-links {
   width: 50%;
   text-align: right;
+  z-index: 1000;
 }
 
 footer .bottom-links #footer-text #footer-links a {
   color: #00263d;
   font-weight: 500;
   letter-spacing: 0.2em;
+}
+
+footer .bottom-links .svg-holder {
+  vertical-align: bottom;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
 }
 
 footer .bottom-links #wave-bottom {

@@ -319,9 +319,7 @@ video {
     padding-bottom: calc(100%-20px)
   }
 
-  // .svg-holder {
-  //   padding-bottom: 40px;
-  // }
+
 
   #wave-middle {
     position: absolute;
@@ -468,6 +466,7 @@ footer {
   flex-direction: column;
   align-items: center;
   position: relative;
+  
 
   #newsletter {
     padding-top: 80px;
@@ -562,24 +561,35 @@ footer {
         
       #footer-name {
         width: 50%;
+        z-index: 1000;
       }
   
       #footer-links {
         width: 50%;
         text-align: right;
+        z-index: 1000;
         a {
           color: #00263d;
           font-weight: 500;
           letter-spacing: 0.2em;
+        
         }
       }
     }
+
+    .svg-holder {
+      vertical-align: bottom;
+      transform: translateY(-25%);
+      
+    }
     #wave-bottom {
       vertical-align: bottom;
+      
     }
 
     #wave-path-bottom {
       fill: url(#wave-grad-light)
+      
     }
   }
 }
