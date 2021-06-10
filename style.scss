@@ -297,16 +297,17 @@ video {
 
 #map {
 
-  background-color: transparent;
-  background-image: url("png-files/map-waves.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+   background-color: transparent;
+   background-image: url("png-files/map-waves.png");
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
   position: relative;
   height: fit-content;
   width: 100%;
   top: 0;
   left: 0;
+  padding-bottom: 80px;
 
   #our-route {
     font-size: 36pt;
@@ -315,47 +316,56 @@ video {
     text-anchor: middle;
     fill: #ffce00;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: calc(100%-20px)
   }
+
+  // .svg-holder {
+  //   padding-bottom: 40px;
+  // }
 
   #wave-middle {
     position: absolute;
     bottom: 0;
+
       path{
         fill: url(#wave-grad-dark)
     }
   }
 
-  #location-holder {
-    height: 230px;
-    min-height: fit-content;
-    background-color: #00263d;
-    text-align: center;
-    font-size: 16px;
-    position: absolute;
-    bottom: 0;
-    padding: 20px;
-
     span.no-wrap {
       white-space: pre-line;
     }
-  }
+  
 
 
 }
 
 #route {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
   #location-holder {
     height: fit-content;
-    width: 100%;
-    
-
+    max-width: 50%;
+    padding: 0 5% 70px 5%;
     background-color: #00263d;
     text-align: center;
-    font-size: 16px;
-    // position: absolute;
-    // bottom: 0;
-    padding: 40px;
+
+
+    span {
+      color: #1e95a9
+    }
+
+    button {
+      text-align: center;
+      font-size: 12pt;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: #1e95a9;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -460,6 +470,7 @@ footer {
   position: relative;
 
   #newsletter {
+    padding-top: 80px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.2em;
@@ -471,8 +482,9 @@ footer {
     font-weight: 700;
     letter-spacing: 0.2em;
     text-anchor: middle;
-    padding-top: 20px;
+    padding-top: 35px;
     padding-bottom: 40px;
+    text-align: center;
   }
 
   input {

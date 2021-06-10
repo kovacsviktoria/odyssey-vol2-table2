@@ -343,6 +343,7 @@ video {
   width: 100%;
   top: 0;
   left: 0;
+  padding-bottom: 80px;
 }
 
 #map #our-route {
@@ -352,7 +353,7 @@ video {
   text-anchor: middle;
   fill: #ffce00;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: calc(100%-20px);
 }
 
 #map #wave-middle {
@@ -364,32 +365,43 @@ video {
   fill: url(#wave-grad-dark);
 }
 
-#map #location-holder {
-  height: 230px;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  background-color: #00263d;
-  text-align: center;
-  font-size: 16px;
-  position: absolute;
-  bottom: 0;
-  padding: 20px;
+#map span.no-wrap {
+  white-space: pre-line;
 }
 
-#map #location-holder span.no-wrap {
-  white-space: pre-line;
+#route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #route #location-holder {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 100%;
+  max-width: 50%;
+  padding: 0 5% 70px 5%;
   background-color: #00263d;
   text-align: center;
-  font-size: 16px;
-  padding: 40px;
+}
+
+#route #location-holder span {
+  color: #1e95a9;
+}
+
+#route #location-holder button {
+  text-align: center;
+  font-size: 12pt;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: #1e95a9;
+  text-transform: uppercase;
 }
 
 #pagination-container {
@@ -485,6 +497,7 @@ footer {
 }
 
 footer #newsletter {
+  padding-top: 80px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -496,8 +509,9 @@ footer h4 {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-anchor: middle;
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 footer input {
