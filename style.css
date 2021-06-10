@@ -223,14 +223,37 @@ body {
   fill: #ffce00;
 }
 
-main {
-  top: 100vh;
-}
-
-main #about {
+#about {
   position: relative;
   background-color: #00263f;
-  min-height: 50vh;
+  min-height: 30vh;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 24pt;
+  font-weight: 700;
+  line-height: 28.8pt;
+  letter-spacing: 0.1em;
+  padding: 60px 5% 30px;
+}
+
+#about p {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: none;
+  color: #1E95A9;
+  padding: 0 15% 50px;
+  letter-spacing: 0;
+}
+
+#map-text {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 30px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 video {
@@ -394,10 +417,9 @@ video {
   fill: #0096ab;
 }
 
-.swiper-button-prev-unique {
-  rotate: 180deg;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+.swiper-button-prev-unique svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 section, footer {
