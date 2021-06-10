@@ -217,8 +217,6 @@ video {
   z-index: -1;
 }
 
-
-
   #welcome {
   height: 100vh;
   width: 100%;
@@ -291,6 +289,14 @@ video {
       height: 100%;
     }
   }
+}
+
+#wave-upper {
+  vertical-align: bottom;
+}
+
+#wave-path-upper {
+  fill: url(#wave-grad-dark)
 }
 
 #pagination-container {
@@ -380,7 +386,7 @@ video {
 // }
 
 .gallery-container {
-  z-index: 2;
+  // ndex: 2;
 }
 
 section, footer {
