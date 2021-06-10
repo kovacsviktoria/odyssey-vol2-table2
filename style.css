@@ -244,11 +244,6 @@ video {
   z-index: -1;
 }
 
-section, footer {
-  background-color: #00263d;
-  z-index: 1;
-}
-
 #welcome {
   height: 100vh;
   width: 100%;
@@ -317,6 +312,11 @@ section, footer {
   fill: url(#wave);
 }
 
+#welcome .svg-holder svg .map-image {
+  width: 100%;
+  height: 100%;
+}
+
 #pagination-container {
   width: 100%;
   height: 50px;
@@ -330,7 +330,6 @@ section, footer {
 }
 
 .swiper-container {
-  z-index: -1;
   margin: auto;
 }
 
@@ -391,6 +390,14 @@ section, footer {
   rotate: 180deg;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.gallery-container {
+  z-index: 2;
+}
+
+section, footer {
+  background-color: #00263d;
 }
 
 footer {
@@ -560,5 +567,139 @@ footer .bottom-links #wave-bottom {
 
 footer .bottom-links #wave-path-bottom {
   fill: url(#wave-grad-light);
+}
+
+.a {
+  fill: #141283;
+}
+
+.a, .aa, .ab, .ac, .ad, .b, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+  stroke: #fc0;
+}
+
+.a, .aa, .ab, .ac, .ad, .b, .c, .d, .e, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.a, .b, .c, .d, .e, .f {
+  stroke-width: 2px;
+}
+
+.aa, .ab, .ac, .ad, .b, .d, .e, .f, .i, .j, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+  fill: none;
+}
+
+.b, .d {
+  stroke-dasharray: 0 3.96;
+}
+
+.c {
+  fill: #114498;
+}
+
+.c, .d, .e {
+  stroke: #0096ab;
+}
+
+.e {
+  stroke-dasharray: 0 3.96;
+}
+
+.g {
+  font-size: 14px;
+  font-family: Poppins-SemiBold, Poppins;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.g, .h, .k {
+  fill: #fc0;
+}
+
+.h {
+  font-size: 12px;
+  font-family: Poppins-Light, Poppins;
+  font-weight: 300;
+}
+
+.j {
+  stroke-dasharray: 3.96 5.94;
+}
+
+.l {
+  stroke-dasharray: 4.18 6.26;
+}
+
+.m {
+  stroke-dasharray: 3.99 5.98;
+}
+
+.n {
+  stroke-dasharray: 4.1 6.15;
+}
+
+.o {
+  stroke-dasharray: 4.01 6.01;
+}
+
+.p {
+  stroke-dasharray: 4 5.99;
+}
+
+.q {
+  stroke-dasharray: 3.99 5.98;
+}
+
+.r {
+  stroke-dasharray: 4 5.99;
+}
+
+.s {
+  stroke-dasharray: 4.3 6.45;
+}
+
+.t {
+  stroke-dasharray: 4.06 6.08;
+}
+
+.u {
+  stroke-dasharray: 4.01 6.01;
+}
+
+.v {
+  stroke-dasharray: 4.13 6.2;
+}
+
+.w {
+  stroke-dasharray: 3.91 5.87;
+}
+
+.x {
+  stroke-dasharray: 3.93 5.9;
+}
+
+.y {
+  stroke-dasharray: 4 6;
+}
+
+.z {
+  stroke-dasharray: 4.04 6.07;
+}
+
+.aa {
+  stroke-dasharray: 3.99 5.98;
+}
+
+.ab {
+  stroke-dasharray: 3.9 5.85;
+}
+
+.ac {
+  stroke-dasharray: 4.03 6.04;
+}
+
+.ad {
+  stroke-dasharray: 3.99 5.99;
 }
 /*# sourceMappingURL=style.css.map */
