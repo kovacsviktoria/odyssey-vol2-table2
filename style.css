@@ -223,16 +223,17 @@ body {
   fill: #ffce00;
 }
 
-#welcome {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background: #0c1657;
-  background: radial-gradient(circle, rgba(12, 22, 87, 0.1) 0%, rgba(12, 22, 87, 0.6) 100%);
+main {
+  top: 100vh;
 }
 
-#welcome video {
-  z-index: -1;
+main #about {
+  position: relative;
+  background-color: #00263f;
+  min-height: 50vh;
+}
+
+video {
   position: fixed;
   top: 0;
   left: 0;
@@ -240,6 +241,20 @@ body {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
+}
+
+section, footer {
+  background-color: #00263d;
+  z-index: 1;
+}
+
+#welcome {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #888991;
+  background: radial-gradient(circle, rgba(12, 22, 87, 0.1) 0%, rgba(12, 22, 87, 0.6) 100%);
 }
 
 #welcome h1 {
