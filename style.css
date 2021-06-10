@@ -247,16 +247,17 @@ body {
   letter-spacing: 0;
 }
 
-#map .text-holder {
+#map #location-holder {
   text-align: center;
 }
 
-#map .text-holder h2 {
+#map h2 {
   font-size: 36pt;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-anchor: middle;
   fill: #ffce00;
+  text-align: center;
 }
 
 video {
@@ -338,10 +339,26 @@ video {
   fill: url(#wave);
 }
 
-#map svg-holder #wave-upper path {
+#map {
+  background-color: transparent;
+  background-image: url("png-files/map-waves.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#wave-middle {
   position: absolute;
   bottom: 0;
+}
+
+#wave-middle path {
   fill: url(#wave-grad-dark);
+}
+
+#map .text-holder {
+  height: 200px;
 }
 
 #pagination-container {

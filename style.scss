@@ -227,16 +227,18 @@ body {
 
 
 #map {
-  .text-holder {
+  #location-holder {
 
     text-align: center;
-    h2 {
-      font-size: 36pt;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-anchor: middle;
-      fill: #ffce00;
-    }
+   
+  }
+  h2 {
+    font-size: 36pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-anchor: middle;
+    fill: #ffce00;
+    text-align: center;
   }
 }
 
@@ -320,21 +322,30 @@ video {
   }
 }
 
-#map svg-holder #wave-upper path{
+#map {
+  background-color: transparent;
+  background-image: url("png-files/map-waves.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+
+
+}
+
+
+#wave-middle {
   position: absolute;
   bottom: 0;
-  fill: url(#wave-grad-dark)
+    path{
+      fill: url(#wave-grad-dark)
+  }
 }
-// #wave-upper {
-//   vertical-align: bottom;
-//   //fill: url(#wave-grad-dark)
-//   background-color: none;
-// }
+#map .text-holder {
+  height: 200px;
+}
 
-
-//  #wave-path-upper {   
-//     fill: url(#wave-grad-dark)
-//  }
 
 #pagination-container {
   width: 100%;
@@ -409,19 +420,8 @@ video {
 
 .swiper-button-prev-unique svg {
   transform: rotate(180deg);
-
 }
 
-
-// #social {
-//   display: flex;
-// }
-
-// #social img {
-//   width: 30px;
-//   height: 30px;
-//   fill: blue;
-// }
 
 .gallery-container {
   // ndex: 2;

@@ -93,6 +93,38 @@ function loadEvent() {
 
     });
 
+    // Route list 
+
+    const locations = [
+        "West Coast, Australia", 
+        "Kalutara, Sri Lanka", 
+        "Garden Route", 
+        "South Africa", 
+        "Faro, Portugal",
+        "Sandvik, Iceland",
+        "Blackbeard Island, Georgia USA",
+        "Bocas Del Toro, Panama",
+        "Praia da Vila, Brasil",
+        "Punta de Lobos, Chile",
+        "Tahiti, French Polynesia",
+        "Hawai, USA",
+        "British Columbia, Canada",
+        "Kamchatka, Russia",
+        "Opua, New Zealand"]
+
+    const locationHolder = document.getElementById("location-holder");
+        
+
+       for (let i=0; i < locations.length; i++) {
+           locations[i] = `<button>${locations[i]}</button>`;
+           console.log(locations[i])
+       };
+        
+       locationHolder.insertAdjacentHTML("beforeend", locations.join(" •->• "))
+
+
+        // " •->• "
+
     // Footer / Social reapeating element created with for loop
 
     const social = document.getElementById("social");
