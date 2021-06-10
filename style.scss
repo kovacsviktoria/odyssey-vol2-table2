@@ -34,7 +34,7 @@
 
 body {
   height: 100%;
-  background-color: #00263f;
+  background-color: #00263d;
   color: #ffce00;
 
   font-family: 'Poppins', sans-serif;
@@ -97,19 +97,7 @@ body {
         text-decoration: underline 3px rgba(255, 206, 0, 1);
       }
     }
-    
-    /*#menu.activeMenu::after {
-      content: "X";
-        border:1px solid #f30;
-    } */
 
-    // #menu.activeMenu::after {
-    //   content: " X";
-    // }
-
-    // #menu.inactiveMenu::after {
-    //   content: " =";
-    // }
   }
 
   button div#menu-icon {
@@ -203,7 +191,7 @@ body {
 
 #about {
   position: relative;
-  background-color: #00263f;
+  background-color: #00263d;
   min-height: 30vh;
   text-align: center;
 
@@ -226,31 +214,6 @@ body {
 }
 
 
-#map {
-  #location-holder {
-
-    text-align: center;
-   
-  }
-  h2 {
-    font-size: 36pt;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-anchor: middle;
-    fill: #ffce00;
-    text-align: center;
-  }
-}
-
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-}
 
 #welcome {
     height: 100vh;
@@ -322,29 +285,70 @@ video {
   }
 }
 
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
 #map {
+
   background-color: transparent;
   background-image: url("png-files/map-waves.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  height: 100vh;
+  top: 0;
+  left: 0;
 
+  h2 {
+    font-size: 36pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-anchor: middle;
+    fill: #ffce00;
+    text-align: center;
+    padding-bottom: 60px;
+  }
 
+  #wave-middle {
+    position: absolute;
+    bottom: 230px;
+      path{
+        fill: url(#wave-grad-dark)
+    }
+  }
 
-}
+  #location-holder {
+    height: 230px;
+    min-height: fit-content;
+    background-color: #00263d;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
 
-
-#wave-middle {
-  position: absolute;
-  bottom: 0;
-    path{
-      fill: url(#wave-grad-dark)
+    span.no-wrap {
+      white-space: pre-line;
+    }
   }
 }
-#map .text-holder {
-  height: 200px;
-}
+
+
+
+
+
+
+
+
+
 
 
 #pagination-container {
@@ -396,7 +400,7 @@ video {
   }
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
 
   .sun, .sunbeam {
     fill: none;

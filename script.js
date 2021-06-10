@@ -120,7 +120,7 @@ function loadEvent() {
            console.log(locations[i])
        };
         
-       locationHolder.insertAdjacentHTML("beforeend", locations.join(" •->• "))
+       locationHolder.insertAdjacentHTML("beforeend", locations.join(`<span class="no-wrap"> •->• <span>`))
 
 
         // " •->• "

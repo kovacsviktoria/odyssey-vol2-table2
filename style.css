@@ -48,7 +48,7 @@ select {
 /*reset end*/
 body {
   height: 100%;
-  background-color: #00263f;
+  background-color: #00263d;
   color: #ffce00;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -83,10 +83,6 @@ body {
 
 #header #menu-btn {
   border-right: 1px solid #ffce00;
-  /*#menu.activeMenu::after {
-      content: "X";
-        border:1px solid #f30;
-    } */
 }
 
 #header #menu-btn #menu {
@@ -225,7 +221,7 @@ body {
 
 #about {
   position: relative;
-  background-color: #00263f;
+  background-color: #00263d;
   min-height: 30vh;
   text-align: center;
 }
@@ -245,30 +241,6 @@ body {
   color: #1E95A9;
   padding: 0 15% 50px;
   letter-spacing: 0;
-}
-
-#map #location-holder {
-  text-align: center;
-}
-
-#map h2 {
-  font-size: 36pt;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-anchor: middle;
-  fill: #ffce00;
-  text-align: center;
-}
-
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
 }
 
 #welcome {
@@ -339,6 +311,17 @@ video {
   fill: url(#wave);
 }
 
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
 #map {
   background-color: transparent;
   background-image: url("png-files/map-waves.png");
@@ -346,19 +329,45 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
-#wave-middle {
+#map h2 {
+  font-size: 36pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-anchor: middle;
+  fill: #ffce00;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#map #wave-middle {
   position: absolute;
-  bottom: 0;
+  bottom: 230px;
 }
 
-#wave-middle path {
+#map #wave-middle path {
   fill: url(#wave-grad-dark);
 }
 
-#map .text-holder {
-  height: 200px;
+#map #location-holder {
+  height: 230px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: #00263d;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+#map #location-holder span.no-wrap {
+  white-space: pre-line;
 }
 
 #pagination-container {
