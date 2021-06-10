@@ -39,7 +39,7 @@ function loadEvent() {
    
     //gallery slider
     const galleryContainer = document.getElementById("gallery-container");
-    const arrowSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 25"><polygon class="a" points="0 25 0 0 20 12.5 0 25"/></svg>`;
+    const arrowSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 25"><polygon points="0 25 0 0 20 12.5 0 25"/></svg>`;
     const sun = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><circle class="sun" cx="15" cy="15" r="10"/><circle class="sunbeam" cx="15" cy="15" r="14"/></svg>`;
 
     galleryContainer.insertAdjacentHTML("beforeend", `
