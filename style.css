@@ -247,13 +247,16 @@ body {
   letter-spacing: 0;
 }
 
-#map-text {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 30px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+#map .text-holder {
+  text-align: center;
+}
+
+#map .text-holder h2 {
+  font-size: 36pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-anchor: middle;
+  fill: #ffce00;
 }
 
 video {
@@ -335,16 +338,9 @@ video {
   fill: url(#wave);
 }
 
-#welcome .svg-holder svg .map-image {
-  width: 100%;
-  height: 100%;
-}
-
-#wave-upper {
-  vertical-align: bottom;
-}
-
-#wave-path-upper {
+#map svg-holder #wave-upper path {
+  position: absolute;
+  bottom: 0;
   fill: url(#wave-grad-dark);
 }
 
@@ -457,52 +453,49 @@ footer h4 {
 }
 
 footer input {
-  background-color: transparent;
   border-bottom: 1px solid #ffce00;
   padding-bottom: 10px;
-  width: 250px;
+  width: 300px;
+}
+
+footer input[type=email] {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #ffce00;
 }
 
 footer input:focus {
-  background-color: transparent;
-  border-bottom: 1px solid #ffce00;
-  padding-bottom: 10px;
-  width: 250px;
-  font-size: 18px;
-  text-transform: none;
-  outline: none;
+  text-align: center;
+  caret-color: #ffce00;
 }
 
 footer input::-webkit-input-placeholder {
-  color: #BDCCD4;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
-  text-transform: none;
+  color: #BDCCD4;
 }
 
 footer input:-ms-input-placeholder {
-  color: #BDCCD4;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
-  text-transform: none;
+  color: #BDCCD4;
 }
 
 footer input::-ms-input-placeholder {
-  color: #BDCCD4;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
-  text-transform: none;
+  color: #BDCCD4;
 }
 
 footer input::placeholder {
-  color: #BDCCD4;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: center;
-  text-transform: none;
+  color: #BDCCD4;
 }
 
 footer input:focus::-webkit-input-placeholder {
