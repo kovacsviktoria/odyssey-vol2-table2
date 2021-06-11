@@ -6,10 +6,10 @@ function loadEvent() {
     menuBtn.insertAdjacentHTML("beforeend", menuContainer);
 
     const menuList = [
-        {"name": "Menu1", "link": "url"},
-        {"name": "Menu2", "link": "url"},
-        {"name": "Menu3", "link": "url"},
-        {"name": "Menu4", "link": "url"}
+        {"name": "Home", "link": "#welcome"},
+        {"name": "About", "link": "#about"},
+        {"name": "Map", "link": "#map"},
+        {"name": "Gallery", "link": "#gallery-container"}
     ];
 
     for (let listItem of menuList){

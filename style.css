@@ -421,9 +421,6 @@ video {
   text-transform: uppercase;
   color: #1e95a9;
   background-color: rgba(255, 206, 0, 0);
-  outline: solid 2px rgba(255, 206, 0, 0);
-  -webkit-transition-property: outline;
-  transition-property: outline;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-property: color;
@@ -433,7 +430,6 @@ video {
 }
 
 #route #location-holder button:hover {
-  outline: solid 2px rgba(255, 206, 0, 0.8);
   background-color: rgba(255, 206, 0, 0.5);
   color: #00263d;
 }

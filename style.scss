@@ -373,15 +373,12 @@ video {
 
       color: #1e95a9;
       background-color: rgba(255, 206, 0, 0);
-      outline: solid 2px rgba(255, 206, 0, 0);
-      transition-property: outline;
       transition-property: background-color;
       transition-property: color;
       transition-duration: 1s;
     }
 
     button:hover {
-      outline: solid 2px rgba(255, 206, 0, 0.8);
       background-color: rgba(255, 206, 0, 0.5);
       color: rgba(0, 38, 61, 1);
     }
