@@ -22,6 +22,7 @@ function loadEvent() {
     //click event menu
     function toggleMenuBtn (click){
         document.getElementById("menu-container").classList.toggle("active");
+        menuBtn.classList.toggle("active")
         let body = document.querySelector("body");
         //document.querySelector("body").style.overflow = "hidden";
         

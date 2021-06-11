@@ -40,21 +40,6 @@ body {
   letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 480px){
-  #header {
-      .logo {
-          width: 80px;
-          height: auto;
-      };
-      .svg-holder svg {
-          width: 80px;
-      };
-      button {
-          width: 130px;
-      };
-  }
-}
-
 #header {
   position: fixed;
   top: 0;
@@ -86,6 +71,10 @@ body {
       transform: translateY(-50%);
     }
 
+	&.active {
+		background-color: rgba(12,22,87,0.5)
+	}
+
     #menu-container{
       width: 150px;
       display: none;
@@ -97,7 +86,9 @@ body {
 
     #menu-container.active {
       display: block;
+	  background-color: rgba(12,22,87,0.7)
     }
+
 
     #menu-container a{
       display: block;
@@ -197,6 +188,25 @@ body {
     fill: #ffce00;
   }
 }
+
+@media screen and (max-width: 480px){
+	#header {
+		.logo {
+			width: 80px;
+			height: auto;
+		};
+		.svg-holder svg {
+			width: 80px;
+		};
+		button {
+			width: 130px;
+		};	
+
+		#menu-btn #menu-container {
+			width: 130px;
+		};
+	}
+ }
 
 #about {
   position: relative;
