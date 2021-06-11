@@ -33,13 +33,26 @@
 /*reset end*/
 
 body {
-  
-  background-color: #00263d;
   color: #ffce00;
 
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 480px){
+  #header {
+      .logo {
+          width: 80px;
+          height: auto;
+      };
+      .svg-holder svg {
+          width: 80px;
+      };
+      button {
+          width: 130px;
+      };
+  }
 }
 
 #header {
@@ -185,10 +198,6 @@ body {
   }
 }
 
-// main {
-//   top: 100vh;    
-// }
-
 #about {
   position: relative;
   background-color: #00263d;
@@ -208,24 +217,22 @@ body {
     font-weight: 300;
     text-transform: none;
     color: #1E95A9;
-    padding: 0 15% 50px;
+    padding: 0 30% 50px;
     letter-spacing: 0;
   }
 }
 
-
-
 #welcome {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     position: relative;
-    background: rgb(136, 137, 145);
-    background: radial-gradient(circle, rgba(12,22,87,0.1) 0%, rgba(12,22,87,0.6) 100%);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background: rgb(136, 137, 145);
+    background: radial-gradient(circle, rgba(12,22,87,0.1) 0%, rgba(12,22,87,0.6) 100%);
 
   h1 {
     font-size: 24pt;
@@ -280,62 +287,53 @@ body {
       position: absolute;
       bottom: 0;
       fill: url(#wave);
-      }
+    }
   }
 
 }
 
 video {
+  width: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
 
 #map {
-
-   background-color: transparent;
-   background-image: url("png-files/map-waves.png");
-   background-position: center center;
-   background-size: cover;
-   background-repeat: no-repeat;
-  position: relative;
-  height: fit-content;
   width: 100%;
+  height: fit-content;
+  position: relative;
   top: 0;
   left: 0;
   padding-bottom: 80px;
 
+  background-color: transparent;
+  background-image: url("png-files/map-waves.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   #our-route {
+    padding-bottom: calc(100%-20px);
     font-size: 36pt;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-anchor: middle;
     fill: #ffce00;
     text-align: center;
-    padding-bottom: calc(100%-20px)
   }
-
-
 
   #wave-middle {
     position: absolute;
     bottom: 0;
 
-      path{
-        fill: url(#wave-grad-dark)
+    path{
+      fill: url(#wave-grad-dark)
     }
   }
-
-    span.no-wrap {
-      white-space: pre-line;
-    }
-  
-
-
 }
 
 #route {
@@ -343,71 +341,53 @@ video {
   justify-content: center;
   align-items: center;
 
-
   #location-holder {
     height: fit-content;
     max-width: 50%;
     padding: 3px 5% 70px 5%;
     background-color: #00263d;
     text-align: center;
-    
-
-
+  
     span {
-      color: #1e95a9
+    color: #1e95a9
     }
 
     button {
+      padding: 3px 3px;
       text-align: center;
       font-size: 12pt;
       font-weight: 300;
       letter-spacing: 0.1em;
       line-height: 2em;
-      color: #1e95a9;
       text-transform: uppercase;
-      padding: 3px 3px;
-      // color: rgba(0, 38, 61,0 );
-      outline: solid 2px rgba(255, 206, 0, 0);
+
+      color: #1e95a9;
       background-color: rgba(255, 206, 0, 0);
+      outline: solid 2px rgba(255, 206, 0, 0);
       transition-property: outline;
       transition-property: background-color;
       transition-property: color;
       transition-duration: 1s;
-
-
     }
 
     button:hover {
       outline: solid 2px rgba(255, 206, 0, 0.8);
       background-color: rgba(255, 206, 0, 0.5);
       color: rgba(0, 38, 61, 1);
-    
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
+//Pagination & swiper styling start
 #pagination-container {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-between;
-  // align-items: center;
-  // margin-top: -150px;
   padding: 15px;
 }
 
 .swiper-container {
-  // z-index: -1;
   margin: auto;
   
   .swiper-slide {
@@ -418,9 +398,9 @@ video {
     }
   }
 }
+
 .swiper-pagination-unique {
   height: 100px;
-
 }
 
 .swiper-pagination-bullet{
@@ -446,7 +426,6 @@ video {
 }
 
 .swiper-pagination-bullet-active {
-
   .sun, .sunbeam {
     fill: none;
     stroke: #fc0;
@@ -470,11 +449,7 @@ video {
 .swiper-button-prev-unique svg {
   transform: rotate(180deg);
 }
-
-
-.gallery-container {
-  // ndex: 2;
-}
+//Pagination & swiper styling end
 
 section, footer {
   background-color: #00263d;
@@ -486,7 +461,6 @@ footer {
   align-items: center;
   position: relative;
   
-
   #newsletter {
     padding-top: 80px;
     font-size: 16px;
@@ -613,8 +587,8 @@ footer {
   }
 }
 
-// Start: A long section of map svg's style
 
+// Start: A long section of map svg's style
 .a {
   fill: #141283;
 }
